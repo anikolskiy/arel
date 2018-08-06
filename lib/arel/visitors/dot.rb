@@ -200,6 +200,7 @@ module Arel
       alias :visit_Float :visit_String
       alias :visit_Symbol :visit_String
       alias :visit_Arel_Nodes_SqlLiteral :visit_String
+      alias :visit_Integer :visit_String
 
       def visit_Hash o, a
         o.each_with_index do |pair, i|

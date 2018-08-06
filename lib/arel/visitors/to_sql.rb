@@ -559,6 +559,7 @@ key on UpdateManager using UpdateManager#key= '#{key.inspect}'
       alias :visit_Arel_SqlLiteral       :literal # This is deprecated
       alias :visit_Bignum                :literal
       alias :visit_Fixnum                :literal
+      alias :visit_Integer               :literal
 
       def quoted o, a
         quote(o, column_for(a))

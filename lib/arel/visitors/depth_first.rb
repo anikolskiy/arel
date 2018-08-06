@@ -126,6 +126,7 @@ module Arel
       alias :visit_Symbol                        :terminal
       alias :visit_Time                          :terminal
       alias :visit_TrueClass                     :terminal
+      alias :visit_Integer                       :terminal
 
       def visit_Arel_Nodes_InsertStatement o, a
         visit o.relation, a
